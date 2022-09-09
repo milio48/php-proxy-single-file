@@ -21,6 +21,7 @@ if(!is_dir($lokasine)){
     // setting config
     file_put_contents($lokasine.'config.php', str_replace("\$config['app_key'] = '';", "\$config['app_key'] = '1';", file_get_contents($lokasine.'config.php')));
     file_put_contents($lokasine.DIRECTORY_SEPARATOR.'templates'.DIRECTORY_SEPARATOR.'main.php', str_replace("index.php", "", file_get_contents($lokasine.DIRECTORY_SEPARATOR.'templates'.DIRECTORY_SEPARATOR.'main.php')));
+    file_put_contents($lokasine.DIRECTORY_SEPARATOR.'templates'.DIRECTORY_SEPARATOR.'url_form.php', str_replace("index.php", "", file_get_contents($lokasine.DIRECTORY_SEPARATOR.'templates'.DIRECTORY_SEPARATOR.'url_form.php')));
 
 }
 
