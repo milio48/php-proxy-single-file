@@ -27,5 +27,6 @@ if(!is_dir($lokasine)){
 
 
     // run //
+    chdir($lokasine);
     include "index.php";
 ?>
