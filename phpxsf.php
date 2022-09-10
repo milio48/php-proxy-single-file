@@ -26,6 +26,6 @@ if(!is_dir($lokasine)){
 }
 
 
-    // run
+    // run //
     include "index.php";
 ?>
